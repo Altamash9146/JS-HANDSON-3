@@ -35,7 +35,20 @@
     <p> - The input contains a single number N.</p>
     <h4>Output Format</h4>
     <p> - Return the number of fives as the desired output.</p>
-    <pre> → Ans  </pre>
+    <pre> → Ans const Find_Five = (N) => 
+      {
+        
+          const numStr = N.toString();
+      let five = 0;
+        for (const ch of numStr) {
+             
+        if (ch == '5') {
+        five++;
+        }
+        }
+        return five;
+        };
+ </pre>
     <hr>
 
     <h4><span class="Q">Q3.</span>Find Sum </h4>
