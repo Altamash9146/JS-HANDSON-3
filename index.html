@@ -35,19 +35,19 @@
     <p> - The input contains a single number N.</p>
     <h4>Output Format</h4>
     <p> - Return the number of fives as the desired output.</p>
-    <pre> → Ans const Find_Five = (N) => 
+    <pre> → Ansconst Find_Five = (N) => 
       {
-        
-          const numStr = N.toString();
-      let five = 0;
-        for (const ch of numStr) {
-             
-        if (ch == '5') {
-        five++;
-        }
-        }
-        return five;
+       let count =0;
+       while (N!==0){
+         let check =N%10;
+         if(check ===5){
+           count++
+         }
+          N=Math.floor(N/10);
+       }
+      return count;
         };
+                
  </pre>
     <hr>
 
