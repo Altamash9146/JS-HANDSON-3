@@ -118,7 +118,20 @@
     <p> - The input contains a single number N.</p>
     <h4>Output Format</h4>
     <p> - Print the required pattern.</p>
-    <pre> → Ans  </pre>
+    <pre> → Ans  
+      const Print_pattern = (N) => 
+{
+   let string="";
+    for(let row=1; row<=N; row++){
+      for(let col=1; col<=row; col++){
+        string+="*";
+      }
+      string+= "\n";
+    }
+    console.log(string);
+}
+
+    </pre>
     <hr>
 
     <h4><span class="Q">Q7.</span> Check whether a Number is a prime or not.</h4>
